@@ -1,6 +1,6 @@
 async function getFile(e) {
     let source = await e.target.files[0].text();
-    source = source.split(new RegExp('[;\n\r]+'));
+    source = source.split(new RegExp(';+'));
     console.log(source);
 }
 
